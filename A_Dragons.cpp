@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <algorithm>
 using namespace std;
 int s, n, a, b;
 vector <pair <int, int >> v;
