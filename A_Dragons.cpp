@@ -1,3 +1,4 @@
+//codeforces question
 #include <bits/stdc++.h>
 using namespace std;
 int s, n, a, b;
