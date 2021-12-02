@@ -1,4 +1,4 @@
-//codeforces question
+//codeforces question solution
 #include <iostream>
 using namespace std;
 
