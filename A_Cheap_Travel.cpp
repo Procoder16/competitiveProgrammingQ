@@ -1,4 +1,4 @@
-//Codeforces question
+//Codeforces question solution
 #include <bits/stdc++.h>
 using namespace std;
 int main()
