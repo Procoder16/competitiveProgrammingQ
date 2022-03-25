@@ -15,7 +15,7 @@ using namespace std;
 #define zrobits(x)      __builtin_ctzll(x)
 #define mod             1000000007
 #define inf             1e18
-#define ps(x,y)         fixed<<setprecision(y)<<x
+#define ps(x,y)         fixed<<setprecision(y)<<xz
 #define mk(arr,n,type)  type *arr=new type[n];
 #define w(x)            int x; cin>>x; while(x--)
 mt19937                 rng(chrono::steady_clock::now().time_since_epoch().count());
@@ -38,8 +38,7 @@ int32_t main()
     c_p_c();
     int t;
     cin>>t;
-    while(t--){
-        solution();
-    }
+    solution();
+
     return 0;
 }
