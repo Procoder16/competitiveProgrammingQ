@@ -30,7 +30,31 @@ freopen("output.txt", "w", stdout);
 }
 
 void solution(){
-    //
+    int n;
+    cin>>n;
+    string str;
+    cin>>str;
+
+    int i = 0;
+    
+    int oneMore = 0;
+    int twoMore = 0;
+
+    while(i < n - 1){
+        if(str[i] == '0' && str[i + 1] == '0'){
+            twoMore++;
+            i++;
+        }
+        else if(str[i] == '0' & str[i+1] == '1' && str[i+2] && str[i+2] == '0'){
+            oneMore++;
+            i+=2;
+        }
+        else{
+            i++;
+        }
+    }
+    int total = 2*twoMore + oneMore;
+    cout<<total<<endl;
 }
  
 int32_t main()
