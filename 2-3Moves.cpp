@@ -30,7 +30,22 @@ freopen("output.txt", "w", stdout);
 }
 
 void solution(){
-    
+    int n;
+    cin >> n;
+
+    int steps = n / 6;
+
+    if(n == 1){
+        cout<<2<<endl;
+    }else if(n % 6 == 0){
+        cout<<2 * steps<<endl;
+    }else if(n % 6 <= 2){
+        cout<<2 * (steps - 1) + 3<<endl;
+    }else if(n % 6 == 3){
+        cout<<(2 * steps) + 1<<endl;
+    }else{
+        cout<<(2 * steps) + 2<<endl;
+    }
 }
  
 int32_t main()

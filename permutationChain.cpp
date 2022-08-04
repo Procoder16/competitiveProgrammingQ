@@ -8,6 +8,7 @@ using namespace std;
 #define mp              make_pair
 #define pii             pair<int,int>
 #define vi              vector<int>
+#define vvi             vector<vector<int>>
 #define mii             map<int,int>
 #define pqb             priority_queue<int>
 #define pqs             priority_queue<int,vi,greater<int> >
@@ -30,7 +31,37 @@ freopen("output.txt", "w", stdout);
 }
 
 void solution(){
-    
+    int num;
+    cin >> num;
+
+    vi vec(num);
+
+    for (int i = 0; i < num; i++){
+        vec[i] = i + 1;
+    }
+
+    int perm = 1;
+
+    vvi res;
+
+    for (int i = 0; i < num; i++) {
+        res.push_back(vec);
+        if (perm >= num)
+            break;
+        else {
+            swap(vec[perm], vec[0]);
+            perm++;
+        }
+    }
+    cout << res.size() << endl;
+
+    for(int i = 0; i < res.size(); i++){
+        for(int j = 0; j < res[i].size(); j++){
+            cout<<res[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    // cout<<endl;
 }
  
 int32_t main()
