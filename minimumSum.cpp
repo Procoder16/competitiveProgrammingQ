@@ -18,6 +18,7 @@ using namespace std;
 #define ps(x,y)         fixed<<setprecision(y)<<xz
 #define mk(arr,n,type)  type *arr=new type[n];
 #define w(x)            int x; cin>>x; while(x--)
+#define loop(x)         for(int i = 0; i < x; i++){}
 mt19937                 rng(chrono::steady_clock::now().time_since_epoch().count());
 
 void c_p_c()
@@ -30,7 +31,23 @@ freopen("output.txt", "w", stdout);
 }
 
 void solution(){
-
+    int num, cnt = 0, ans;
+    cin>>num;
+    
+    int arr[num];
+    
+    for(int i = 0; i < num; i++){
+        int temp;
+        cin>>temp;
+        arr[i] = temp;
+        
+        int calculatedGCD = __gcd(cnt, arr[i]);
+        
+        cnt = calculatedGCD;
+    }
+    
+    ans = cnt * num;
+    cout<<ans<<endl;
 }
  
 int32_t main()

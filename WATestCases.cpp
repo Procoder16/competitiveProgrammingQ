@@ -6,6 +6,7 @@ using namespace std;
 #define int             long long
 #define pb              push_back
 #define mp              make_pair
+#define si              set<int>
 #define pii             pair<int,int>
 #define vi              vector<int>
 #define mii             map<int,int>
@@ -30,16 +31,41 @@ freopen("output.txt", "w", stdout);
 }
 
 void solution(){
-
+    
+    int n;
+    cin >> n;
+    int arr[n];
+    for(int i = 0; i < n; i++){
+        int t;
+        cin>>t;
+        arr[i] = t;
+    }
+    
+    si s;
+    
+    for(int i = 0; i < n; i++) {
+        char ch;
+        cin>>ch;
+        if(ch == '0'){
+          s.insert(arr[i]);  
+        } 
+    }
+        
+    cout<<*s.begin()<<endl;
 }
  
 int32_t main()
 {
     c_p_c();
+    // int t;
+    // cin>>t;
+    // while(t--){
+    //     solution();    
+    // } 
     
     w(x){
         solution();
-    }    
+    }
 
     return 0;
 }

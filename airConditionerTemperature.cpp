@@ -30,15 +30,24 @@ freopen("output.txt", "w", stdout);
 }
 
 void solution(){
-
+    int x, y, z;
+    cin>>x>>y>>z;
+    if(max(x, z) <= y){
+      cout<<"YES";  
+    } 
+    else{
+      cout<<"NO";  
+    } 
+    cout<<endl;
 }
  
 int32_t main()
 {
     c_p_c();
-    
-    w(x){
-        solution();
+    int t;
+    cin>>t;
+    while(t--){
+        solution();    
     }    
 
     return 0;
